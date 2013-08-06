@@ -8,14 +8,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <style>
-      body { width: 100%; background: url(img/bg.png) }
+      body { width: 100%; background: url(img/bg2.png) }
       h1.top { float: left; }
       nav.top { float: right; }
       .cb { clear: both; }
       .left { float: left; }
       .right { float: right; }
-      .center { margin: 0px auto; }
-      article.top { min-height: 600px; width: 800px; margin: 100px auto; }
+      .center { margin: 0px auto; display: block; }
+      article.top { min-height: 600px; width: 600px; margin: 100px auto; }
       .powered { text-align: center; }
       body > .navbar .brand {
         padding-right: 0;
@@ -29,27 +29,39 @@
         -moz-transition: all .2s linear;
         transition: all .2s linear;
       }
+      .paragraph { padding: 10px; margin: 10px 0px; background: #ffffff; border-radius: 5px; }
     </style>
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="#top">Pony::Object</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li>
-                <a href="/config">Config</a>
-              </li>
-              <li>
-                <a href="/log">Logs</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
     <article class="top">
+      <h1>Pony::Object documentation</h1>
+      <img src="img/saddle.png" class="center">
+      <h2>What is "Pony::Object"?</h2>
+      <div class="paragraph">
+        <p>
+          <code>Pony::Object</code> is an object system for <a href="http://www.perl.org/">Perl</a>.
+          Yet another? Not really. If you already used OOP modules in Perl,
+          you may be found that they doesn't looks like regular OOP in other languages.
+          Generally they propose their approach for OO programming. Let's look at OOP modules for Perl.
+          <ul>
+            <li><code>Moose</code> has nice system of roles, weak refs support,
+            before/after/around method modifiers, but it hasn't so familiar
+            public/protected/private properties/methods. Also assignment to properties looks not usual.</li>
+            <li><code>Mouse</code> looks like <code>Moose</code>, but smaller.</li>
+            <li>Stevan's p5-mop</li>
+            <li>Class::*</li>
+            <li>Blessed refs</li>
+          </ul>
+        </p>
+      </div>
+      <h2>How to ride a Pony?</h2>
+      <div class="paragraph">
+        <p>
+          First of all you need Pony. You can get it from <a href="http://www.perl.org/cpan.html">CPAN</a>.
+          To get Pony::Object you may run command in console:
+          <pre>cpan Pony::Object</pre>
+        </p>
+      </div>
     </article>
   </body>
 </html>
